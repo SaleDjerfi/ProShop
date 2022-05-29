@@ -217,7 +217,7 @@ const OrderScreen = ({ match, history }) => {
                   <ListGroup.Item>
                     <Button
                       type='button'
-                      className='btn btn-block'
+                      className='btn btn-block b-black'
                       onClick={deliverHandler}
                     >
                       Mark As Delivered
