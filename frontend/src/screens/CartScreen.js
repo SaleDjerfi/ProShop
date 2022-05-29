@@ -17,7 +17,6 @@ import {
 } from 'react-bootstrap';
 import Message from '../components/Message';
 import { addToCart, removeFromCart } from '../actions/cartActions';
-import { CART_CLEAR_ITEMS } from '../constants/cartConstants';
 
 const CartScreen = () => {
   const { id } = useParams();
@@ -34,7 +33,6 @@ const CartScreen = () => {
   useEffect(() => {
     if (id) {
       dispatch(addToCart(id, qty));
-      dispatch({ type: CART_CLEAR_ITEMS });
     }
   }, [dispatch, id, qty]);
 
